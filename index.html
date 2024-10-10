@@ -33,7 +33,23 @@
                 </section>
 
                <section>
-                TODO: Who am I 
+                <h1>Quick info about me</h1>
+                <p><a href="https://mjvc.me">mjvc.me</a></p>
+                <iframe style="height: 100em; width: 100%;"
+                        src="https://mjvc.me">
+                </iframe>
+               </section>
+
+               <section>
+                <h1>Quick info about me</h1>
+                <ol>
+                  <li class="fragment">PhD in CS @ Berkeley</li>
+                  <li class="fragment">Background in learning/teaching formal specifications through demonstrations.
+                    <img style="height=6em" src="https://mjvc.me/phd/imgs/episodic_communication.svg"/>
+                  </li>
+                  <li class="fragment">I strongly dislike cars in cities.</li>
+                  <li class="fragment">I run an AI-team @ Nissan Advanced Technology Center - Silicon Valley<span style="opacity: 0.3"> NATC-SV</span> </li>
+                </ol>
                </section>
 
                <section data-background-image="imgs/map.svg"
@@ -242,28 +258,46 @@
                  </div>
                </section>
 
-               <section>
-                 <div style="display: flex; flex-direction: column; justify-content: center; height: 100vh;" data-auto-animate-target="unmatched">
+               <section data-auto-animate>
+                   <p style="padding: 1em; font-size: 1.3em; border: 1px solid white;">
+                     Will highlight <strong style="color: green">3</strong> recent works.
+                   </p>
+               </section>
+
+               <section data-auto-animate>
+                   <p style="padding: 1em; font-size: 1.3em; border: 1px solid white;">
+                     Will highlight <strong style="color: green">3</strong> recent works.
+                   </p>
+
+                 <div style="display: flex; flex-direction: column; justify-content: center;">
                    <p style="padding: 1em; font-size: 1.3em; border: 1px solid white;">
                      How can we reliably <strong style="color: green">communicate</strong> requirements and goals to an AI?
                    </p>
-                   <ol style="padding-left: 3em">
-                   <li class="fragment visible current-fragment">
+                   <p class="fragment" >
                      How can we <strong style="color: #b48bd7">translate</strong>
                      informal requests into <strong style="color: #b48bd7">machine checkable</strong>
                      objectives?
-                   </li>
-                   <li class="fragment visible current-fragment">
+                   </p>
+                   <p class="fragment" data-id=1>
                      How can we <strong style="color: #b48bd7">encode</strong>
                      these objectives for consumption by an neural network
                      policy?
-                   </li>
-                   </ol>
+                   </p>
+                   <p class="fragment" data-id=2>
+                   How can we formalize ad-hoc description <strong style="color: #b48bd7">scenarios</strong>for downstream testing and training?
+                   </p>
 
                  </div>
                </section>
 
-               <section>
+               <section data-auto-animate>
+                <p data-id=1>
+                     How can we <strong style="color: #b48bd7">encode</strong>
+                     these objectives for consumption by an neural network
+                     policy?
+                </p>
+
+                <p><a href="https://rad-embeddings.github.io">rad-embeddings.github.io</a></p>
                 <iframe id="inlineFrameExample"
                         title="Inline Frame Example"
                         style="height: 100em; width: 100%;"
@@ -272,12 +306,170 @@
                </section>
 
                <section>
+                       <p>Key idea is pre-train on <strong style="color: orange">R</strong>each
+                       <strong style="color: orange">A</strong>void <strong style="color: orange">D</strong>erived Automata</p>
+                       <img class="fragment" style="background-color: white" src="imgs/local_reach_avoid_keynote.png"/>
+                       <p class="fragment">Show the resulting <strong style="color: lightblue">frozen</strong> DFA-embedder can be used for downstream RL-policies</p>
+               </section>
+
+               <section data-auto-animate>
+
+                 <div style="display: flex; flex-direction: column; justify-content: center;">
+                   <p style="opacity: 0.3; padding: 1em; font-size: 1.3em; border: 1px solid white;">
+                     Will highlight <strong style="color: green">3</strong> recent works.
+                   </p>
+
+                   <p style="padding: 1em; font-size: 1.3em; border: 1px solid white; opacity: 0.3">
+                     How can we reliably <strong style="color: green">communicate</strong> requirements and goals to an AI?
+                   </p>
+                   <p data-fragment-index=1>
+                     How can we <strong style="color: #b48bd7">translate</strong>
+                     informal requests into <strong style="color: #b48bd7">machine checkable</strong>
+                     objectives?
+                   </p>
+                   <p style="opacity: 0.4"  >
+                     How can we <strong style="color: #b48bd7">encode</strong>
+                     these objectives for consumption by an neural network
+                     policy?
+                   </p>
+                   <p style="opacity: 0.1" data-id=2>
+                   How can we formalize ad-hoc description <strong style="color: #b48bd7">scenarios</strong>for downstream testing and training?
+                   </p>
+
+
+                 </div>
+               </section>
+
+               <section data-auto-animate>
+                 <p data-fragment-index=1>
+                   How can we <strong style="color: #b48bd7">translate</strong>
+                   informal requests into <strong style="color: #b48bd7">machine checkable</strong>
+                   objectives?
+                 </p>
+
+                <p><a href="https://lstar-lm.github.io">lstar-lm.github.io</a></p>
                 <iframe id="inlineFrameExample"
                         title="Inline Frame Example"
                         style="height: 100em; width: 100%;"
                         src="https://lstar-lm.github.io/">
                 </iframe>
                </section>
+
+               <section>
+                 <p>Key idea is to treat LLM as a noisy membership oracle</p>
+                 <p class="fragment">Provide corrective feedback using 
+                   counter-factuals derived from expert demonstrations.
+                 </p>
+                 <img style="height: 20em" class="fragment" src="imgs/lstar_lm_overview.svg"/>
+               </section>
+
+               <section data-auto-animate>
+
+                 <div style="display: flex; flex-direction: column; justify-content: center;">
+                   <p style="opacity: 0.3; padding: 1em; font-size: 1.3em; border: 1px solid white;">
+                     Will highlight <strong style="color: green">3</strong> recent works.
+                   </p>
+
+                   <p style="padding: 1em; font-size: 1.3em; border: 1px solid white; opacity: 0.3">
+                     How can we reliably <strong style="color: green">communicate</strong> requirements and goals to an AI?
+                   </p>
+                   <p data-fragment-index=1>
+                     How can we <strong style="color: #b48bd7">translate</strong>
+                     informal requests into <strong style="color: #b48bd7">machine checkable</strong>
+                     objectives?
+                   </p>
+                   <p style="opacity: 0.4"  >
+                     How can we <strong style="color: #b48bd7">encode</strong>
+                     these objectives for consumption by an neural network
+                     policy?
+                   </p>
+                   <p style="opacity: 0.1" data-id=2>
+                   How can we formalize ad-hoc description <strong style="color: #b48bd7">scenarios</strong>for downstream testing and training?
+                   </p>
+
+
+                 </div>
+               </section>
+
+
+
+               <section>
+                <p><a href="https://ke7.github.io/ScenicNL">ke7.github.io/ScenicNL</a></p>
+                <iframe id="inlineFrameExample"
+                        title="Inline Frame Example"
+                        style="height: 100em; width: 100%;"
+                        src="https://ke7.github.io/ScenicNL/">
+                </iframe>
+
+               </section>
+               <section>
+                 <img src="imgs/scenic.png"/>
+               </section>
+
+               <section data-auto-animate>
+
+                 <div style="display: flex; flex-direction: column; justify-content: center;">
+                   <p style="opacity: 0.3; padding: 1em; font-size: 1.3em; border: 1px solid white;">
+                     Will highlight <strong style="color: green">3</strong> recent works.
+                   </p>
+
+                   <p style="padding: 1em; font-size: 1.3em; border: 1px solid white; opacity: 0.3">
+                     How can we reliably <strong style="color: green">communicate</strong> requirements and goals to an AI?
+                   </p>
+                   <p style="opacity: 0.8" data-fragment-index=1>
+                     How can we <strong style="color: #b48bd7">translate</strong>
+                     informal requests into <strong style="color: #b48bd7">machine checkable</strong>
+                     objectives?
+                   </p>
+                   <p style="opacity: 0.8"  >
+                     How can we <strong style="color: #b48bd7">encode</strong>
+                     these objectives for consumption by an neural network
+                     policy?
+                   </p>
+                   <p style="opacity: 0.8" data-id=2>
+                   How can we formalize ad-hoc description <strong style="color: #b48bd7">scenarios</strong>for downstream testing and training?
+                   </p>
+
+
+                 </div>
+               </section>
+
+
+
+               <section data-auto-animate class="lab-goals">
+                 <h1 style="font-size: 1em; opacity: 0.5">Examples of topics studied at NATC-SV</h1>
+                 <div  style="display: flex; flex-direction: row; justify-content: space-between;">
+                 <img 
+                    style="width: 50%; padding: 1em;"
+                    src="https://wieck-nissanao-production.s3.us-west-1.amazonaws.com/releaseInlineImages/f2ade9a4ea7bca605d38b9dafe228ec747247127"
+                 />
+                 <ol style="width: 50%; font-size: 1.5em">
+                   <li>Autonomous Driving</li>
+                   <li>Mapping</li>
+                   <li>Scene Understanding and Behavior Prediction</li>
+                   <li>Smart City</li>
+                   <li>Vehicle-and-Grid Interactions</li>
+                   <li>Battery and Materials Informatics</li>
+                   <li>Data Analytics</li>
+                   <li>In Cabin Experiences</li>
+                 </ol>
+                 </div>
+               </section>
+
+                <section data-background-video="https://cdn.flixel.com/flixel/0dumfmdkyhipo9pb7588.tablet.mp4?v=1"
+                         data-background-video-loop="true">
+                    <div style="background-color: #000000d9; height: 100%; border-radius: 100px">
+                    <h1 style="color: #ed5e81;">
+                            Fin
+                    </h1>
+
+                    <h2 style="opacity: 0.5;"> USC Center for Autonomy and AI Fall Workshop</h2>
+                    <h3 style="opacity: 0.6">Marcell Vazquez-Chanlatte</h3>
+                    <h4 style="opacity: 0.5">AI Researcher @ Nissan Advanced Technology Center - SV</h4>
+                    <p> <a href="https://mjvc.me/2024-usc-fall-workshop">mjvc.me/2024-usc-fall-workshop</a></p>
+                    </div>
+
+                </section>
 
 
 
@@ -296,7 +488,7 @@
                 // - https://revealjs.com/initialization/
                 // - https://revealjs.com/config/
                 Reveal.initialize({
-                        allottedTime: 55 * 60 * 1000, // 3 minutes
+                        allottedTime: 10 * 60 * 1000, // 10 minutes
                         hash: true,
                         width: 1920,
                         height: 1080,
